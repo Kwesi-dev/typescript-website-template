@@ -21,6 +21,19 @@
         align-items: center;
         position: relative;
 
+        & h1{
+            font-size: 2rem;
+            margin-bottom: 10px;
+            text-align: center;
+            color: #263b5e;
+        }
+        & p{
+            text-align: center;
+            font-size: 1.6rem;
+            line-height: 26px;
+            color: #6a8695;
+        }
+
         .transparent-logo{
             font-size: 8rem!important;
             position: absolute;
@@ -34,18 +47,6 @@
                 margin-bottom: 10px;
                 margin-top: 10px;
             }
-        }
-        .promoCard-wrapper h1{
-            font-size: 2rem;
-            margin-bottom: 10px;
-            text-align: center;
-            color: #263b5e;
-        }
-        .promoCard-wrapper p{
-            text-align: center;
-            font-size: 1.6rem;
-            line-height: 26px;
-            color: #6a8695;
         }
         .first{
             color: #ff4c4c;

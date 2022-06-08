@@ -1,6 +1,8 @@
 import React from 'react'
 import "./navbar.scss"
 import logo from "../../assets/logo-dark.png"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBasketShopping } from '@fortawesome/free-solid-svg-icons'
 const Navbar = () => {
   return (
     <section className="navbar">
@@ -30,6 +32,14 @@ const Navbar = () => {
                 </li>
                 <li className="navigation-item">
                     <p>Contact</p>
+                </li>
+                <li className="navigation-item">
+                    <div className="carticon-container">
+                        <FontAwesomeIcon icon={faBasketShopping} className="carticon"/>
+                        <div className="cart-count">
+                            <span>2</span>
+                        </div>
+                    </div>
                 </li>
             </ul>
         </nav>

@@ -1,5 +1,6 @@
 import React from 'react'
-import "./promoCard.css"
+import "./promoCard.scss"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 type carddataState = {
     carddata:{
         key: number,
@@ -15,9 +16,9 @@ const PromoCard = ({carddata}: carddataState) => {
   return (
     <article className="promoCard">
         <div className="promoCard-wrapper">
-            {carddata.transparent}
+            <FontAwesomeIcon icon={carddata.transparent} className={carddata.transClassName}/>
             <div className="grid-item-logo">
-                {carddata.icon}
+            <FontAwesomeIcon icon={carddata.icon} className={carddata.iconClassName}/>
             </div>
             <h1>{carddata.title}</h1>
             <p>{carddata.info}</p>
