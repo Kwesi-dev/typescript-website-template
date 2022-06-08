@@ -1,0 +1,25 @@
+.promopage {
+  width: 100%;
+  height: 450px;
+  position: relative;
+  top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.promopage .promopage-wrapper {
+  width: 85%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+/*# sourceMappingURL=promopage.css.map */
