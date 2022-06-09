@@ -44,6 +44,56 @@
                         cursor: pointer;
                     }
                 }
+                &:hover{
+                    .home-options{
+                        opacity: 1;
+                        visibility: visible;
+                        transform: translateY(-24px);    
+                    }
+                }
+                .home-options{
+                    position: absolute;
+                    top: 70px;
+                    left: 0;
+                    width: 220px;
+                    height: fit-content;
+                    background-color: #ffff;
+                    transition: all 0.5s ease;
+                    opacity: 0;
+                    transform: translateY(0);
+                    visibility: hidden;
+                    .home-option{
+                        list-style-type: none;
+                        border-bottom: 2px solid lightgray;
+                        padding: 15px 0 15px 10px;
+                        & p{
+                            color: rgb(51, 49, 49);
+                        }
+                        &:hover{
+                            background-color: #622dfa;
+                            p{
+                                color: #ffff;
+                            }
+                        }
+                       
+                    }
+                    
+                }
+                .about-options{
+                    @extend .home-options;
+                }
+                .services-options{
+                    @extend .home-options;
+                }
+                .case-options{
+                    @extend .home-options;
+                }
+                .page-options{
+                    @extend .home-options;
+                }
+                .blog-options{
+                    @extend .home-options;
+                }
                 .carticon-container{
                     position: relative;
                     margin-left: 30px;
@@ -52,7 +102,7 @@
                         color: #622dfa;
                     }
                     .cart-count{
-                        background-color: $pink;
+                        background-color: $blue;
                         width: 20px;
                         height: 20px;
                         border-radius: 50%;
