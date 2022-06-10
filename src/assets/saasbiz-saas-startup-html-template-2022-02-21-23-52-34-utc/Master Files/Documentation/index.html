@@ -1,0 +1,717 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>SaasBiz || Template Documentation</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+    .added1 {	background-color: #336600;
+	color: #FFFFFF;
+}
+    </style>
+ 
+	<!-- Syntax Highlighter -->
+	<link rel="stylesheet" type="text/css" href="syntax-highlighter/styles/shCore.css" media="all">
+	<link rel="stylesheet" type="text/css" href="syntax-highlighter/styles/shThemeDefault.css" media="all">
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;SaasBiz&rdquo; Documentation by &ldquo;DynamicLayers&rdquo; v1.0</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;SaasBiz&rdquo;</h1>
+		
+        <div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+			  <p class="prepend-top">
+<strong>
+					Created:06/02/2020<br>
+				By: <a href="https://www.themeforest.net/user/dynamiclayers">DynamicLayers</a><br>
+				<br>
+			    </strong><strong><br>
+		        </strong></p>
+    </div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing our theme. If you have any questions that are beyond the scope of this help file, please contact our support. Thanks so much!</p>
+	</div>
+	  </div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#htmlStructure">HTML Structure</a></li>
+			<li><a href="#temp-components">Template Components</a></li>
+			<li><a href="#cssFiles">CSS Files and Structure</a></li>
+			<li><a href="#javascript">JavaScript</a></li>
+			<li><a href="#credits">Sources and Credits</a></li>
+		</ol>
+		
+		<hr>
+		
+		<h3 id="htmlStructure"><strong>A) HTML Structure</strong> - <a href="#toc">top</a></h3>
+		<p>Below is the general HTML structure of the landing page.<br>
+		</p>              
+
+	  <h4 id="front-html-structures"><strong>1) index.html File Structure</strong> - <a href="#toc">top</a></h4>
+	  
+      <p>The template page's layout consist of top that show the logo and main menu, hero section  that show background image, beforecontent that show some amaizing content,  about section contain about your some info & feature, service section contained all services, work section you can showcase your portfolio with awesome animation, skills section here you can add some skills, team section is for your team members, testimonial section here you can published your customer reviews, call to action this for call to action content, contact section here you can put your contact information & footer that show copyright information.</p>
+        
+<pre class="brush: html;" id="front-html-structure-pre">
+&lt;!doctype html>
+&lt;!--[if lt IE 7]>      &lt;html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> &lt;![endif]-->
+&lt;!--[if IE 7]>         &lt;html class="no-js lt-ie9 lt-ie8" lang=""> &lt;![endif]-->
+&lt;!--[if IE 8]>         &lt;html class="no-js lt-ie9" lang=""> &lt;![endif]-->
+&lt;!--[if gt IE 8]>&lt;!--> &lt;html class="no-js" lang="en"> &lt;!--&lt;![endif]-->
+    &lt;head>
+        &lt;meta charset="utf-8">
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1">
+		&lt;meta name="description" content="Multipurpose Saas Startup HTML Template">
+        &lt;meta name="author" content="DynamicLayers">
+       
+        &lt;title>Saasbiz | Multipurpose Saas Startup HTML Template&lt;/title>
+        
+		&lt;link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+		
+		&lt;!-- Font Awesome CSS -->
+        &lt;link rel="stylesheet" href="css/fontawesome.min.css">
+        &lt;!-- Themify Icons CSS -->
+        &lt;link rel="stylesheet" href="css/themify-icons.css">
+        &lt;!-- Elegant Line Icons CSS -->
+        &lt;link rel="stylesheet" href="css/elegant-line-icons.css">
+        &lt;!-- Elegant Icons CSS -->
+        &lt;link rel="stylesheet" href="css/elegant-font-icons.css">
+        &lt;!-- Saasbiz Icons CSS -->
+        &lt;link rel="stylesheet" href="css/saasbiz-icons.css">
+        &lt;!-- Animate CSS -->
+        &lt;link rel="stylesheet" href="css/animate.min.css">
+        &lt;!-- Nice Select CSS -->
+        &lt;link rel="stylesheet" href="css/nice-select.css">
+		&lt;!-- Bootstrap CSS -->
+        &lt;link rel="stylesheet" href="css/bootstrap.min.css">
+        &lt;!-- Slicknav CSS -->
+        &lt;link rel="stylesheet" href="css/slicknav.min.css">
+        &lt;!-- Pricing CSS -->
+        &lt;link rel="stylesheet" href="css/pricing-table.css">
+        &lt;!-- Odometer CSS -->
+        &lt;link rel="stylesheet" href="css/odometer.min.css">
+        &lt;!-- Venobox CSS -->
+        &lt;link rel="stylesheet" href="css/venobox/venobox.css">
+		&lt;!-- OWL-Carousel CSS -->
+        &lt;link rel="stylesheet" href="css/owl.carousel.css">
+		&lt;!-- Main CSS -->
+        &lt;link rel="stylesheet" href="css/main.css">
+		&lt;!-- Responsive CSS -->
+        &lt;link rel="stylesheet" href="css/responsive.css">
+
+        &lt;script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js">&lt;/script>
+    &lt;/head>
+    &lt;body data-spy="scroll" data-target="#navmenu" data-offset="70">
+        &lt;!--[if lt IE 8]>
+            &lt;p class="browserupgrade">You are using an &lt;strong>outdated&lt;/strong> browser. Please &lt;a href="http://browsehappy.com/">upgrade your browser&lt;/a> to improve your experience.&lt;/p>
+        &lt;![endif]-->
+        
+        &lt;div class="site-preloader-wrap">
+            &lt;div class="spinner">&lt;/div>
+        &lt;/div>&lt;!-- Preloader -->
+        
+        &lt;header id="header" class="header-section">
+            &lt;div class="container">
+                &lt;nav class="navbar ">
+                    
+                &lt;/nav>
+            &lt;/div>
+		&lt;/header> &lt;!--.header-section -->
+		
+        &lt;div class="header-height">&lt;/div>
+        
+        &lt;section class="hero-section bg-grey d-flex align-items-center bd-bottom">
+            &lt;div class="bubble-effect">
+                &lt;div class="bubble b-1">&lt;/div>
+                &lt;div class="bubble b-2">&lt;/div>
+                &lt;div class="bubble b-3">&lt;/div>
+                &lt;div class="bubble b-4">&lt;/div>
+                &lt;div class="bubble b-5">&lt;/div>
+                &lt;div class="bubble b-6">&lt;/div>
+            &lt;/div>
+            &lt;div class="container">
+                
+            &lt;/div>
+        &lt;/section>&lt;!--/.hero-section-->
+        
+        &lt;section class="promo-section bd-bottom padding">
+            &lt;div class="container">
+                
+            &lt;/div>
+        &lt;/section>&lt;!--/.promo-section-->
+        
+        &lt;section class="content-section bg-grey bd-bottom padding">
+            &lt;div class="container">
+                
+            &lt;/div>
+        &lt;/section>&lt;!--/.content-section-->
+        
+        &lt;section class="content-section bd-bottom padding">
+            &lt;div class="container">
+                
+            &lt;/div>
+        &lt;/section>&lt;!--/.content-section-->
+        
+        &lt;section class="web-search-section bg-dark padding">
+           &lt;div class="left-design">&lt;/div>
+           &lt;div class="right-design">&lt;/div>
+            &lt;div class="container">
+                
+            &lt;/div>
+            &lt;div class="cloud">&lt;/div>
+        &lt;/section>&lt;!--/.web-search-section-->
+        
+        &lt;section class="project-section bd-bottom padding">
+            &lt;div class="container">
+                
+            &lt;/div>
+        &lt;/section>&lt;!--/.project-section-->
+        
+         &lt;section class="testimonial-section bg-grey bd-bottom padding">
+           &lt;div class="left-design">&lt;/div>
+           &lt;div class="right-design">&lt;/div>
+            &lt;div class="container">
+                
+            &lt;/div>
+        &lt;/section>&lt;!--/.testimonial-section-->
+        
+        &lt;section class="cta-section bg-dark padding">
+           &lt;div class="cta-shape-1">&lt;/div>
+           &lt;div class="cta-shape-2">&lt;/div>
+           &lt;div class="cta-shape-3">&lt;/div>
+            &lt;div class="container">
+                
+            &lt;/div>
+        &lt;/section>&lt;!--/.cta-section-->
+        
+        &lt;div class="sponsor-section padding">
+            &lt;div class="container">
+                
+            &lt;/div>
+        &lt;/div>&lt;!--/. sponsor-section -->
+		
+        &lt;section class="widget-section bg-dark padding">
+           &lt;div class="left-design">&lt;/div>
+           &lt;div class="right-design">&lt;/div>
+            &lt;div class="container">
+                
+            &lt;/div>
+        &lt;/section>&lt;!--/.widget-section-->
+        
+		&lt;footer class="footer-section bg-dark align-center">
+			&lt;div class="container">
+				
+			&lt;/div>
+		&lt;/footer>&lt;!-- /.footer-section -->
+
+		&lt;a data-scroll href="#header" id="scroll-to-top">&lt;i class="arrow_carrot-up">&lt;/i>&lt;/a>
+	
+		&lt;!-- jQuery Lib -->
+		&lt;script src="js/vendor/jquery-1.12.4.min.js">&lt;/script>
+		&lt;!-- Bootstrap JS -->
+		&lt;script src="js/vendor/bootstrap.min.js">&lt;/script>
+		&lt;!-- Tether JS -->
+		&lt;script src="js/vendor/tether.min.js">&lt;/script>
+		&lt;!-- Slicknav JS -->
+		&lt;script src="js/vendor/jquery.slicknav.min.js">&lt;/script>
+		&lt;!-- OWL-Carousel JS -->
+		&lt;script src="js/vendor/owl.carousel.min.js">&lt;/script>
+		&lt;!-- Smooth Scroll JS -->
+		&lt;script src="js/vendor/smooth-scroll.min.js">&lt;/script>
+        &lt;!-- Venobox JS -->
+        &lt;script src="js/vendor/venobox.min.js">&lt;/script>
+		&lt;!-- Ajaxchimp JS -->
+		&lt;script src="js/vendor/jquery.ajaxchimp.min.js">&lt;/script>
+		&lt;!--YTPlayer Js-->
+		&lt;script src="js/vendor/jquery.mb.YTPlayer.min.js">&lt;/script>
+		&lt;!-- Nice Select JS -->
+        &lt;script src="js/vendor/jquery.nice-select.min.js">&lt;/script>
+        &lt;!-- Pricing Switcher JS -->
+        &lt;script src="js/vendor/pricing-switcher.js">&lt;/script>
+        &lt;!-- Waypoints JS -->
+        &lt;script src="js/vendor/waypoints.min.js">&lt;/script>
+        &lt;!-- Odometer JS -->
+        &lt;script src="js/vendor/odometer.min.js">&lt;/script>
+		&lt;!-- Wow JS -->
+		&lt;script src="js/vendor/wow.min.js">&lt;/script>
+		&lt;!-- Main JS -->
+		&lt;script src="js/main.js">&lt;/script>
+
+    &lt;/body>
+&lt;/html>
+        </pre>
+       <hr>
+		
+
+		<h3 id="temp-components"><strong>B) Template Components</strong> - <a href="#toc">top</a></h3>
+		<p>The site is made of many sections like header, slider, testimonials, services and more...</p>
+
+<h4 id="slider"><strong>1) Header Section</strong> - <a href="#toc">top</a></h4>
+
+
+<pre class="brush: html;">
+&lt;header id="header" class="header-section">
+    &lt;div class="container">
+        &lt;nav class="navbar ">
+            &lt;a href="index.html" class="navbar-brand">&lt;img src="img/logo-dark.png" alt="Saasbiz">&lt;/a>
+            &lt;div class="d-flex menu-wrap">
+               &lt;div id="mainmenu" class="mainmenu">
+                   &lt;ul class="nav">
+                       &lt;li>&lt;a data-scroll class="nav-link active" href="index.html">Home&lt;span class="sr-only">(current)&lt;/span>&lt;/a> 
+                            &lt;ul>
+                               &lt;li>&lt;a href="index.html">Home Design Studio&lt;/a>&lt;/li>
+                               &lt;li>&lt;a href="index-2.html">Home Web hosting&lt;/a>&lt;/li>
+                               &lt;li>&lt;a href="index-3.html">Home Support Desk&lt;/a>&lt;/li>
+                               &lt;li>&lt;a href="index-4.html">Home Apps Landing&lt;/a>&lt;/li>
+                               &lt;li>&lt;a href="index-5.html">Home Cloud Based Saas&lt;/a>&lt;/li>
+                            &lt;/ul>
+                        &lt;/li>
+                        &lt;li>&lt;a href="#">About&lt;/a> 
+                            &lt;ul>
+                               &lt;li>&lt;a href="about-us.html">About Us&lt;/a>&lt;/li>
+                               &lt;li>&lt;a href="about-company.html">About Company&lt;/a>&lt;/li>
+                            &lt;/ul>
+                        &lt;/li>
+                        &lt;li>&lt;a href="#">Services&lt;/a> 
+                            &lt;ul>
+                               &lt;li>&lt;a href="services-1.html">Services 01&lt;/a>&lt;/li>
+                               &lt;li>&lt;a href="services-2.html">Services 02&lt;/a>&lt;/li>
+                            &lt;/ul>
+                        &lt;/li>
+                        &lt;li>&lt;a href="#">Case Studies&lt;/a> 
+                            &lt;ul>
+                               &lt;li>&lt;a href="case-studies.html">Case Studies&lt;/a>&lt;/li>
+                               &lt;li>&lt;a href="case-details.html">Case Studies Single&lt;/a>&lt;/li>
+                            &lt;/ul>
+                        &lt;/li>
+                        &lt;li>&lt;a href="#">Pages&lt;/a> 
+                            &lt;ul>
+                               &lt;li>&lt;a href="job-listing.html">Job Listing&lt;/a>&lt;/li>
+                               &lt;li>&lt;a href="job-details.html">Job Details&lt;/a>&lt;/li>
+                               &lt;li>&lt;a href="team.html">Our Team&lt;/a>&lt;/li>
+                               &lt;li>&lt;a href="pricing-plans.html">Pricing Plans&lt;/a>&lt;/li>
+                               &lt;li>&lt;a href="login.html">Login&lt;/a>&lt;/li>
+                               &lt;li>&lt;a href="register.html">Register&lt;/a>&lt;/li>
+                               &lt;li>&lt;a href="faq.html">FAQ's&lt;/a>&lt;/li>
+                               &lt;li>&lt;a href="404.html">404 Error&lt;/a>&lt;/li>
+                            &lt;/ul>
+                        &lt;/li>
+                        &lt;li>&lt;a href="#">Blog&lt;/a> 
+                            &lt;ul>
+                               &lt;li>&lt;a href="blog-grid.html">Blog Grid&lt;/a>&lt;/li>
+                               &lt;li>&lt;a href="blog-classic.html">Blog Classic&lt;/a>&lt;/li>
+                               &lt;li>&lt;a href="blog-single.html">Blog Single&lt;/a>&lt;/li>
+                            &lt;/ul>
+                        &lt;/li>
+                        &lt;li>&lt;a href="contact.html">Contact&lt;/a>&lt;/li>
+                    &lt;/ul>
+               &lt;/div>
+               &lt;div class="header-right">
+                   &lt;div class="cart-icon">&lt;i class="fa fa-shopping-basket">&lt;/i>&lt;span class="count">0&lt;/span>&lt;/div>
+               &lt;/div>
+            &lt;/div>
+        &lt;/nav>
+    &lt;/div>
+&lt;/header> &lt;!--.header-section -->
+
+&lt;div class="header-height">&lt;/div>
+</pre>
+        
+        
+	  <hr>
+<h4 id="portfolio"><strong>2) Hero Section</strong> - <a href="#toc">top</a></h4>
+  <br>
+<pre class="brush: html;">
+&lt;section class="hero-section bg-grey d-flex align-items-center bd-bottom">
+    &lt;div class="bubble-effect">
+        &lt;div class="bubble b-1">&lt;/div>
+        &lt;div class="bubble b-2">&lt;/div>
+        &lt;div class="bubble b-3">&lt;/div>
+        &lt;div class="bubble b-4">&lt;/div>
+        &lt;div class="bubble b-5">&lt;/div>
+        &lt;div class="bubble b-6">&lt;/div>
+    &lt;/div>
+    &lt;div class="container">
+        &lt;div class="row hero-wrap d-flex align-items-center">
+            &lt;div class="col-lg-6 sm-padding">
+                &lt;div class="hero-content">
+                    &lt;h1>Drive More Customers &lt;br>Through Digital.&lt;/h1>
+                    &lt;p>We provide marketing services to startups and small businesses to looking for a partner of their digital media, design & development, lead generation and communications requirents.&lt;/p>
+                    &lt;a href="#" class="default-btn">Get Started&lt;/a>
+                &lt;/div>
+            &lt;/div>
+            &lt;div class="col-lg-6 sm-padding">
+                &lt;img src="img/hero-1.png" alt="hero">
+            &lt;/div>
+        &lt;/div>
+    &lt;/div>
+&lt;/section>&lt;!--/.hero-section-->
+</pre>
+
+<hr>
+
+<h4 id="portfolio"><strong>3) Feature Section</strong> - <a href="#toc">top</a></h4>
+  <br>
+<pre class="brush: html;">
+&lt;section id="features" class="features-section bg-grey bd-bottom padding">
+	&lt;div class="shape">&lt;/div>
+	&lt;div class="container">
+		&lt;div class="row d-flex align-items-center">
+			&lt;div class="col-lg-6 sm-padding wow fadeInLeft" data-wow-delay="200ms">
+				&lt;div class="section-heading mb-40">
+					&lt;h2>Revolutionize Your Online &lt;br>Business Today!&lt;/h2>
+					&lt;p>The first is a non technical method which requires the use of software. Download free Saasdesk software and use advanced tools to help.&lt;/p>
+					&lt;a href="#" class="default-btn">Get Started Now&lt;/a>
+				&lt;/div>
+			&lt;/div>
+			&lt;div class="col-lg-6 sm-padding">
+				&lt;div class="row">
+					&lt;div class="col-md-6 padding-15 wow fadeInUp" data-wow-delay="200ms">
+						&lt;div class="features-item">
+							&lt;i class="icon-anchor">&lt;/i>
+							&lt;h3>Data Analytics&lt;/h3>
+							&lt;p>We provide marketing to businesses to looking for a partner digital media.&lt;/p>
+						&lt;/div>
+					&lt;/div>
+				&lt;/div>
+			&lt;/div>
+		&lt;/div>
+	&lt;/div>
+&lt;/section>&lt;!-- /.features-section -->
+</pre>
+
+<br>
+
+<hr>
+
+<h4 id="portfolio"><strong>4) Content Section</strong> - <a href="#toc">top</a></h4>
+  <br>
+<pre class="brush: html;">
+&lt;section class="content-section bd-bottom padding">
+	&lt;div class="container">
+		&lt;div class="row d-flex align-items-center">
+			&lt;div class="col-lg-6 sm-padding wow fadeInLeft" data-wow-delay="200ms">
+				&lt;div class="content-info">
+					&lt;h2>Track Productivity & Keep Your &lt;br> Projects On The Budget!&lt;/h2>
+					&lt;p>The first is a non technical method which requires the use of software. Download free Saasdesk software and use advanced tools to help.&lt;/p>
+					&lt;a href="#" class="default-btn">Get Started Now&lt;/a>
+				&lt;/div>
+			&lt;/div>
+			&lt;div class="col-lg-6 sm-padding wow fadeInRight" data-wow-delay="300ms">
+				&lt;img src="img/content-1.png" alt="img">
+			&lt;/div>
+		&lt;/div>
+	&lt;/div>
+&lt;/section>&lt;!-- /.content-section -->
+</pre>
+
+<br>
+
+<hr />
+
+<h4 id="portfolio"><strong>5) Pricing Section</strong> - <a href="#toc">top</a></h4>
+  <br>
+<pre class="brush: html;">
+&lt;section id="pricing" class="pricing-section bd-bottom padding">
+	&lt;div class="shape">&lt;/div>
+	&lt;div class="container">
+		&lt;div class="section-heading text-center mb-40">
+			&lt;span>Plans & Pricing&lt;/span>
+			&lt;h2>Pricing For Every Business&lt;/h2>
+		&lt;/div>
+		&lt;div class="row">
+			&lt;div class="col-lg-4 col-sm-6 padding-15 wow fadeInUp" data-wow-delay="200ms">
+				&lt;div class="pricing-box">
+					&lt;div class="pricing-head">
+						&lt;h3>Basic&lt;/h3>
+						&lt;h2>$29.00 &lt;span>Monthly&lt;/span>&lt;/h2>
+					&lt;/div>
+					&lt;ul class="pricing-list">
+						&lt;li>1024 MB Memory&lt;/li>
+						&lt;li>10 Websites&lt;/li>
+						&lt;li>Unlimited Bandwidth&lt;/li>
+						&lt;li>24/7 Support&lt;/li>
+					&lt;/ul>
+					&lt;div class="pricing-footer">
+						&lt;a href="#" class="default-btn">Get Started&lt;/a>
+					&lt;/div>
+				&lt;/div>
+			&lt;/div>
+		&lt;/div>
+	&lt;/div>
+&lt;/section>&lt;!-- /.pricing-section -->
+</pre>
+
+<br>
+
+<hr />
+
+<h4 id="portfolio"><strong>6) Testimonial Section</strong> - <a href="#toc">top</a></h4>
+  <br>
+<pre class="brush: html;">
+&lt;section id="reviews" class="testimonial-section bd-bottom padding">
+	&lt;div class="bubble-effect">
+		&lt;div class="bubble b-1">&lt;/div>
+	&lt;/div>
+	&lt;div class="container">
+	&lt;div class="section-heading text-center mb-40">
+		&lt;span>Testimonial&lt;/span>
+		&lt;h2>What Our Customer Says!&lt;/h2>
+	&lt;/div>
+		&lt;div class="testimonial-wrap">
+			&lt;div class="row">
+			   &lt;div class="col-lg-8 offset-lg-2">
+				   &lt;div class="slider slider-for">
+						&lt;div class="testi-content">
+							&lt;p>"Thank you for guiding us through the construction process, understanding, and always ready to accommodate our needs. We love our new space and know that it was built by the very best!"&lt;/p>
+							&lt;div class="author-info">
+								&lt;h3>José Carpio &lt;span>Developer&lt;/span>&lt;/h3>
+							&lt;/div>
+						&lt;/div>
+					&lt;/div>
+			   &lt;/div>
+			&lt;/div>
+			&lt;div class="row">
+				&lt;div class="col-lg-6 offset-lg-3">
+					&lt;div class="slider slider-nav">
+				&lt;div class="testi-thumb">
+					&lt;img src="img/testi-1.jpg" alt="img">
+				&lt;/div>
+			&lt;/div>
+				&lt;/div>
+			&lt;/div>
+		&lt;/div>
+	&lt;/div>
+&lt;/section>&lt;!-- /.testimonial-section -->
+</pre>
+
+<br>
+
+<hr />
+
+<h4 id="portfolio"><strong>7) Faq Section</strong> - <a href="#toc">top</a></h4>
+  <br>
+<pre class="brush: html;">
+<section class="faq-section padding">
+	<div class="container">
+		<div class="section-heading text-center mb-40">
+			<span>Some Faq's&lt;span>
+			<h2>Frequently Asked Questions&lt;h2>
+		&lt;div>
+		<div class="row">
+			<div class="col-sm-6 padding-15">
+				<ul class="faq-content">
+					<li>
+						<h3>If you could time travel, what would you do?&lt;h3>
+						<p>As of the moment, we only have PayPal as our payment method. But don’t worry, we are working on adding more payment methods for your convenience.&lt;p>    
+					&lt;li>
+				&lt;ul>
+			&lt;div>
+			<div class="col-sm-6 padding-15">
+				<ul class="faq-content">
+					<li>
+						<h3>If you could time travel, what would you do?&lt;h3>
+						<p>As of the moment, we only have PayPal as our payment method. But don’t worry, we are working on adding more payment methods for your convenience.&lt;p>    
+					&lt;li>
+				&lt;ul>
+			&lt;div>
+		&lt;div>
+	&lt;div>
+&lt;section><!-- /.faq-section -->
+</pre>
+
+<br>
+
+<hr />
+
+<h4 id="portfolio"><strong>8) Cta Section</strong> - <a href="#toc">top</a></h4>
+  <br>
+<pre class="brush: html;">
+&lt;section class="cta-section">
+	&lt;div class="container">
+		&lt;div class="row cta-wrap d-flex align-items-center">
+			&lt;div class="cta-overlay-img">&lt;/div>
+			&lt;div class="col-lg-7 sm-padding">
+				&lt;div class="cta-content">
+					&lt;h2>10,000+ Professionals Peoples  &lt;br>Recommeding SaasDesk!&lt;/h2>
+				&lt;/div>
+			&lt;/div>
+			&lt;div class="col-lg-5 sm-padding">
+				&lt;div class="cta-content text-right">
+					&lt;a href="#" class="default-btn">Get Started Now&lt;/a>
+					&lt;a href="#" class="default-btn">Start Free Trial&lt;/a>
+				&lt;/div>
+			&lt;/div>
+		&lt;/div>
+	&lt;/div>
+&lt;/section>&lt;!-- /.cta-section -->
+</pre>
+
+<hr />
+
+
+<h4 id="portfolio"><strong>9) Widget Section </strong> - <a href="#toc">top</a></h4>
+  <br>
+<pre class="brush: html;">
+&lt;section class="widget-section bd-bottom padding">
+   &lt;div class="bubble-effect">
+		&lt;div class="bubble b-1">&lt;/div>
+		&lt;div class="bubble b-3">&lt;/div>
+		&lt;div class="bubble b-4">&lt;/div>
+		&lt;div class="bubble b-5">&lt;/div>
+		&lt;div class="bubble b-6">&lt;/div>
+	&lt;/div>
+	&lt;div class="container">
+		&lt;div class="row">
+			&lt;div class="col-md-4 col-sm-6 padding-15">
+				&lt;div class="widget-content">
+					&lt;a class="brand" href="#">&lt;img src="img/logo-dark.png" alt="logo">&lt;/a>
+					&lt;p>Building your own home is about desire, fantasy. &lt;br> But it’s achievable anyone can do it.&lt;/p>
+					&lt;ul class="widget-social">
+						&lt;li>&lt;a href="#">&lt;i class="fa fa-facebook">&lt;/i>&lt;/a>&lt;/li>
+					&lt;/ul>
+				&lt;/div>
+			&lt;/div>
+			&lt;div class="col-md-2 col-sm-6 padding-15">
+				&lt;ul class="widget-links">
+					&lt;h3>Company&lt;/h3>
+					&lt;li>&lt;a href="#">About Us&lt;/a>&lt;/li>
+				&lt;/ul>
+			&lt;/div>
+			&lt;div class="col-md-2 col-sm-6 padding-15">
+				&lt;ul class="widget-links">
+					&lt;h3>Product&lt;/h3>
+					&lt;li>&lt;a href="#">Features&lt;/a>&lt;/li>
+				&lt;/ul>
+			&lt;/div>
+			&lt;div class="col-md-2 col-sm-6 padding-15">
+				&lt;ul class="widget-links">
+					&lt;h3>Download&lt;/h3>
+					&lt;li>&lt;a href="#">IOS&lt;/a>&lt;/li>
+				&lt;/ul>
+			&lt;/div>
+			&lt;div class="col-md-2 col-sm-6 padding-15">
+				&lt;ul class="widget-links">
+					&lt;h3>Support&lt;/h3>
+					&lt;li>&lt;a href="#">Privacy&lt;/a>&lt;/li>
+				&lt;/ul>
+			&lt;/div>
+		&lt;/div>
+	&lt;/div>
+&lt;/section>&lt;!-- /.widget-section -->
+</pre>
+
+<hr />
+
+<h4 id="portfolio"><strong>10) Footer Section </strong> - <a href="#toc">top</a></h4>
+  <br>
+<pre class="brush: html;">
+&lt;footer class="footer-section align-center">
+	&lt;div class="container">
+		&lt;p>&copy; 2020 Saasdesk Powered by DynamicLayers&lt;/p>
+	&lt;/div>
+&lt;/footer>&lt;!-- / .footer-section -->
+</pre>
+
+<hr />
+
+  <br>
+
+<p>&nbsp;</p>
+
+	  <hr>
+		<h3 id="cssFiles"><strong>C) CSS Files and Structure</strong> - <a href="#toc">top</a></h3>
+		 <p>These are the css files:</p>
+		<ol>
+			<li>bootstrap.min.css</li> 
+			<li>animate.min.css</li> 
+			<li>elegant-font-icons.css</li> 
+			<li>elegant-line-icons.css</li> 
+			<li>owl.carousel.css</li> 
+			<li>main.css </li>
+	        <li>responsive.css</li>
+	  </ol>
+
+	  
+<p>&nbsp;</p>
+	  <hr>
+		
+		<h3 id="javascript"><strong>D) JavaScript</strong> - <a href="#toc">top</a></h3>
+		
+		<p>This theme use these Javascript files:</p>
+		
+		<ol>
+		  <li>jQuery<br>
+		    jQuery is a Javascript library that greatly reduces the amount of code that you must write. jQuery use these javascript files:
+		    <pre>
+            	bootstrap.min.js
+                smooth-scroll.min.js
+                owl.carousel.min.js
+                jquery.ajaxchimp.min.js
+                jquery-1.12.4.min.js
+                jquery.mb.YTPlayer.min.js
+                owl.carousel.min.js
+                venobox.min.js
+                wow.min.js
+                jquery.counterup.min.js
+                main.js
+            </pre>
+		    You can edit the contact.js files. for setting contact form
+		    <br>
+            <br>
+		  </li>
+	  </ol>
+		
+<hr>
+		
+		<h3 id="credits"><strong>F) Sources and Credits</strong> - <a href="#toc">top</a></h3>
+		<ol>
+			<li><a href="http://getbootstrap.com" target="_blank">Bootstrap 3.3</a></li>
+			<li><a href="http://www.owlcarousel.owlgraphic.com" target="_blank">OWL Carousel</a></li>
+			<li><a href="https://wowjs.uk/" target="_blank">WOW JS</a></li>
+			<li><a href="http://veno.es/venobox/" target="_blank">VenoBox</a></li>
+			<li><a href="https://github.com/cferdinandi/smooth-scroll" target="_blank">Smooth Scroll</a></li>
+			<li><a href="https://github.com/pupunzi/jquery.mb.YTPlayer/wiki" target="_blank">YTPlayer</a></li>
+			<li><a href="http://plugins.jquery.com/ajaxchimp/" target="_blank">AjaxChimp</a></li>
+		</ol>
+	    <p>
+      
+    <hr>
+        <h3 id="php"><strong>G) PHP Code Explanation </strong> - <a href="#toc">top</a></h3>
+        <p>There are only one php code for contact page which is contact.php, open this file and change the email and subject on line 24 and line 27.
+         No need to edit other code unless you really want to.
+  <hr>
+		<p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist.</p> 
+		
+	  <p class="append-bottom alt large"><strong>DynamicLayers</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div>
+<!-- end div .container -->
+	<script type="text/javascript" src="syntax-highlighter/scripts/shCore.js"></script> 
+	<script type="text/javascript" src="syntax-highlighter/scripts/shBrushXml.js"></script> 
+	<script type="text/javascript" src="syntax-highlighter/scripts/shBrushCss.js"></script> 
+	<script type="text/javascript" src="syntax-highlighter/scripts/shBrushJScript.js"></script> 
+	<script type="text/javascript" src="syntax-highlighter/scripts/shBrushPhp.js"></script> 
+	<script type="text/javascript">
+     SyntaxHighlighter.all()
+</script>
+</body>
+</html>

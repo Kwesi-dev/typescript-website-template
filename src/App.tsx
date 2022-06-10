@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
 import Navbar from './components/navbar/Navbar';
-import Home from './pages/home/Home';
-import Promopage from './pages/promopage/Promopage';
+import Mainhome from './pages/main-home/Mainhome';
+
 
 function App() {
   return (
@@ -11,8 +11,7 @@ function App() {
         <Navbar/>
       </header>
       <main>
-        <Home/>
-        <Promopage/>
+        <Mainhome/>
       </main>
     </div>
   );

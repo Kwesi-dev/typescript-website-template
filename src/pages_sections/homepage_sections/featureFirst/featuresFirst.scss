@@ -1,0 +1,85 @@
+@use "../../../globals" as *;
+.features-first{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 80px;
+    background-color: $seablue;
+    border-top: 2px solid lightgray;
+
+    &-wrapper{
+        width: 85%;
+        height: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding: 100px 0;
+
+        .wrapper-grid-item{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .features-grid-item-top{
+                h3{
+                    font-size: 1.4rem;
+                    color: $lightblue;
+                    margin-bottom: 30px;
+                }
+                .second-headers{
+                    margin-bottom: 30px;
+                    h1{
+                        font-size: 3.5rem;
+                        color: $deepblue;
+                    }
+                }
+                .featurefirst-desc{
+                    font-size: 1.6rem;
+                    width: 95%;
+                    margin-bottom: 30px;
+                    color: $lightblue;
+                    line-height: 22px;
+                }
+            }
+            .features-grid-item-bottom{
+                width: 100%;
+                height: 100%;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 30px;
+                .bottom-item{
+                    width: 100%;
+                    height: 100%;
+                    .featurefirst-icon1{
+                        font-size: 5rem;
+                        color: red;
+                        margin-bottom: 15px;
+                    }
+                    .featurefirst-icon2{
+                        font-size: 5rem;
+                        color: green;
+                        margin-bottom: 15px;
+                    }
+                    h1{
+                        font-size: 2rem;
+                         color: $deepblue;
+                         margin-bottom: 20px;
+                    }
+                    p{
+                        font-size: 1.6rem;
+                        color: $lightblue;
+                        line-height: 24px;
+                    }
+                }
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+}
