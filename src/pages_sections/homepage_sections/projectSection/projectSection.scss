@@ -1,0 +1,45 @@
+@use "../../../globals" as *;
+.projectSection{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 80px;
+    margin-bottom: 30px;
+    .projectSection-wrapper{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 0;
+
+        .project-main{
+            width: 100%;
+            &-header{
+                margin-bottom: 30px;
+                h3{
+                    font-size: 1.6rem;
+                    text-align: center;
+                    color: $deepblue;
+                    font-weight: 500;
+                    margin-bottom: 20px;
+                }
+                h1{
+                    font-size: 3.5rem;
+                    text-align: center;
+                    color: $deepblue;
+                    font-weight: 700;
+                    margin-bottom: 20px;
+                }
+            }
+            .slickSlider-container{
+                width: 70%;
+                margin: 0 auto;
+
+                .mySwiper{
+                    height: 450px;
+                }
+            }
+        }
+    }
+}
