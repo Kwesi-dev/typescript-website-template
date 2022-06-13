@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Autoplay, Pagination } from "swiper";
+import { Autoplay } from "swiper";
 const SponsorSection = () => {
   return (
     <section className="sponsorSection">
@@ -22,10 +22,7 @@ const SponsorSection = () => {
                         delay: 2500,
                         disableOnInteraction: false,
                         }}
-                        pagination={{
-                        clickable: true,
-                        }}
-                        modules={[Autoplay, Pagination]}
+                        modules={[Autoplay]}
                         className="mySwiper"
                     >
                         <SwiperSlide>
