@@ -27,7 +27,29 @@ const Testimonials = () => {
                         <h1> Says About Us</h1>
                     </header>
                     <div className="testimonial-card-container">
-                        <TestimonialCard/>
+                    <Swiper
+                        spaceBetween={10}
+                        slidesPerView={1}
+                        autoplay={{
+                        delay: 2500,
+                        disableOnInteraction: false,
+                        }}
+                        pagination={{
+                        clickable: true,
+                        }}
+                        modules={[Autoplay, Pagination]}
+                        className="mySwiper"
+                    >
+                        <SwiperSlide>
+                            <TestimonialCard/>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <TestimonialCard/>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <TestimonialCard/>
+                        </SwiperSlide>
+                    </Swiper>
                     </div>
                 </div>
             </div>
