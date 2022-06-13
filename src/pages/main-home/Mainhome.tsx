@@ -5,6 +5,7 @@ import Home from '../../pages_sections/homepage_sections/home/Home'
 import ProjectSection from '../../pages_sections/homepage_sections/projectSection/ProjectSection'
 import Promopage from '../../pages_sections/homepage_sections/promopage/Promopage'
 import SearchSection from '../../pages_sections/homepage_sections/searchSection/SearchSection'
+import Testimonials from '../../pages_sections/homepage_sections/Testimonials/Testimonials'
 
 const Mainhome = () => {
   return (
@@ -15,6 +16,7 @@ const Mainhome = () => {
         <FeaturesSecond/>
         <SearchSection/>
         <ProjectSection/>
+        <Testimonials/>
     </>
   )
 }
