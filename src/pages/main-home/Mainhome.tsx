@@ -1,4 +1,5 @@
 import React from 'react'
+import CTASection from '../../pages_sections/homepage_sections/cta-section/CTASection'
 import FeatureFirst from '../../pages_sections/homepage_sections/featureFirst/FeatureFirst'
 import FeaturesSecond from '../../pages_sections/homepage_sections/featuresSecond/FeaturesSecond'
 import Home from '../../pages_sections/homepage_sections/home/Home'
@@ -17,6 +18,7 @@ const Mainhome = () => {
         <SearchSection/>
         <ProjectSection/>
         <Testimonials/>
+        <CTASection/>
     </>
   )
 }
