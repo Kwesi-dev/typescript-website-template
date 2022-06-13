@@ -150,6 +150,27 @@
                     }
                 }
             }
+            .testimonial-body-right{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .testimonial-title{
+                    font-size: 1.6rem;
+                    color: $deepblue;
+                    text-transform: uppercase;
+                    margin-bottom: 20px;
+                }
+                .testimonial-headers{
+                    margin-bottom: 30px;
+                   
+                    h1{
+                        font-size: 3.2rem;
+                        color: $deepblue;
+                    }
+                }
+            }
         }
     }
 }

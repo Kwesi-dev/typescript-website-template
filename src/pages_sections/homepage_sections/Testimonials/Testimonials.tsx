@@ -1,5 +1,11 @@
 import React from 'react'
 import "./testimonials.scss"
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import { Autoplay, Pagination } from "swiper";
+import TestimonialCard from '../../../components/TestimonialCard/TestimonialCard';
 const Testimonials = () => {
   return (
     <section className="testimonials">
@@ -15,9 +21,14 @@ const Testimonials = () => {
                     <div className="circle circle5"></div>
                 </div>
                 <div className="testimonial-body-right">
-                    <p>Testimonial</p>
-                    <h1>What Our Customers Says About Us</h1>
-
+                    <p className="testimonial-title">Testimonial</p>
+                    <header className="testimonial-headers">
+                        <h1>What Our Customer</h1>
+                        <h1> Says About Us</h1>
+                    </header>
+                    <div className="testimonial-card-container">
+                        <TestimonialCard/>
+                    </div>
                 </div>
             </div>
         </div>
