@@ -6,6 +6,7 @@ import Home from '../../pages_sections/homepage_sections/home/Home'
 import ProjectSection from '../../pages_sections/homepage_sections/projectSection/ProjectSection'
 import Promopage from '../../pages_sections/homepage_sections/promopage/Promopage'
 import SearchSection from '../../pages_sections/homepage_sections/searchSection/SearchSection'
+import SponsorSection from '../../pages_sections/homepage_sections/sponsors/SponsorSection'
 import Testimonials from '../../pages_sections/homepage_sections/Testimonials/Testimonials'
 
 const Mainhome = () => {
@@ -19,6 +20,7 @@ const Mainhome = () => {
         <ProjectSection/>
         <Testimonials/>
         <CTASection/>
+        <SponsorSection/>
     </>
   )
 }
