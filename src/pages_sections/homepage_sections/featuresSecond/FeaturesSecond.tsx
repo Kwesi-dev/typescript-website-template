@@ -17,8 +17,8 @@ const FeaturesSecond = () => {
                 <div className="features-grid-item-top">
                     <h3>FEATURES</h3>
                     <header className="second-headers">
-                        <h1>Track Your Productivity & Keep Your</h1>
-                        <h1>Projects On The Budget!</h1>
+                        <h1>Track Your Productivity & Keep</h1>
+                        <h1>Your Projects On The Budget!</h1>
                     </header>
                     <p className="featurefirst-desc">We provide marketing services to startups and small businesses to looking for a partner of their digital media, design & development, lead generation and communications requirents</p>
                 </div>
