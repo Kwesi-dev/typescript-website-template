@@ -1,4 +1,3 @@
-import React from 'react'
 import "./testimonials.scss"
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -6,9 +5,20 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Autoplay, Pagination } from "swiper";
 import TestimonialCard from '../../../components/TestimonialCard/TestimonialCard';
+import React, { useEffect } from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Testimonials = () => {
+    useEffect(()=>{
+        AOS.init({
+            duration: 3000,
+        })
+      }, [])
   return (
-    <section className="testimonials">
+    <section className="testimonials"
+        data-aos="fade" 
+        data-aos-delay="100"
+    >
         <div className="testimonials-wrapper">
             <div className="left-design"></div>
             <div className="right-design"></div>

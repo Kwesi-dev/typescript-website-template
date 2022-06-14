@@ -1,7 +1,10 @@
-import React from 'react'
+import { useEffect } from 'react'
 import "./promoCard.scss"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 type carddataState = {
+  
     carddata:{
         key: number,
         title: string,
@@ -13,8 +16,16 @@ type carddataState = {
     }
 }
 const PromoCard = ({carddata}: carddataState) => {
+  useEffect(()=>{
+    AOS.init({
+        duration: 3000,
+    })
+}, [])
   return (
-    <article className="promoCard">
+    <article className="promoCard"
+      data-aos="fade-left" 
+      data-aos-delay="100"
+    >
         <div className="promoCard-wrapper">
             <FontAwesomeIcon icon={carddata.transparent} className={carddata.transClassName}/>
             <div className="grid-item-logo">

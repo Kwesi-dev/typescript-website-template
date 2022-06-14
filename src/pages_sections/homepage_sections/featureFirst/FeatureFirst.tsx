@@ -2,13 +2,25 @@ import { faArrowsSpin, faBoxesPacking } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import contentOne from "../../../assets/content-1.png"
 import "./featuresFirst.scss"
-import React from 'react'
-
+import React, { useEffect } from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const FeatureFirst = () => {
+    useEffect(()=>{
+        AOS.init({
+            duration: 3000,
+        })
+    }, [])
   return (
-    <section className="features-first">
+    <section className="features-first"
+        data-aos="fade" 
+        data-aos-delay="100"
+    >
         <div className="features-first-wrapper">
-            <div className="wrapper-grid-item">
+            <div className="wrapper-grid-item"
+                 data-aos="slide-right" 
+                 data-aos-delay="60"
+            >
                 <div className="features-grid-item-top">
                     <h3>FEATURES</h3>
                     <header className="second-headers">
@@ -30,7 +42,10 @@ const FeatureFirst = () => {
                     </div>
                 </div>
             </div>
-            <div className="wrapper-grid-item">
+            <div className="wrapper-grid-item"
+             data-aos="slide-left" 
+             data-aos-delay="100"
+            >
                 <img src={contentOne} alt="content pic" />
             </div>
         </div>

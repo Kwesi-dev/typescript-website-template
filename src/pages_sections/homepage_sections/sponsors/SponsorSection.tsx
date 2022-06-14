@@ -1,13 +1,23 @@
-import React from 'react'
 import "./sponsorSection.scss"
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Autoplay } from "swiper";
+import React, { useEffect } from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const SponsorSection = () => {
+    useEffect(()=>{
+        AOS.init({
+            duration: 3000,
+        })
+      }, [])
   return (
-    <section className="sponsorSection">
+    <section className="sponsorSection"
+    data-aos="fade" 
+    data-aos-delay="100"
+    >
         <div className="sponsorSection-wrapper">
             <header className="sponsor-header">
                 <h4>sponsors</h4>

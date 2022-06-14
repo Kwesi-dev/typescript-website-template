@@ -1,8 +1,18 @@
-import React from 'react'
 import "./searchsection.scss"
+import React, { useEffect } from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const SearchSection = () => {
+  useEffect(()=>{
+    AOS.init({
+        duration: 3000,
+    })
+  }, [])
   return (
-    <section className="search-section">
+    <section className="search-section"
+    data-aos="fade" 
+    data-aos-delay="100"
+    >
         <div className="search-section-wrapper">
             <div className="left-design"></div>
             <div className="right-design"></div>

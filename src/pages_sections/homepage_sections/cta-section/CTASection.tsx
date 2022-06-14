@@ -1,8 +1,18 @@
-import React from 'react'
 import "./ctaSection.scss"
+import React, { useEffect } from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const CTASection = () => {
+    useEffect(()=>{
+        AOS.init({
+            duration: 3000,
+        })
+      }, [])
   return (
-    <section className="ctaSection">
+    <section className="ctaSection"
+        data-aos="fade" 
+        data-aos-delay="100"     
+    >
         <div className="ctaSection-wrapper">
             <div className="cta-shape-1"></div>
             <div className="cta-shape-2"></div>

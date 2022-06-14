@@ -2,18 +2,30 @@ import { faBullseye, faChartPie } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import contentTwo from "../../../assets/content-2.png"
 import "./featuresSecond.scss"
-import React from 'react'
 import AnimatedPage from '../../../components/animatedpage/AnimatedPage'
-
+import React, { useEffect } from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const FeaturesSecond = () => {
+    useEffect(()=>{
+        AOS.init({
+            duration: 3000,
+        })
+    }, [])
   return (
     <section className="features-second">
         <AnimatedPage/>
         <div className="features-second-wrapper">
-            <div className="wrapper-grid-item">
+            <div className="wrapper-grid-item"
+                 data-aos="slide-right" 
+                 data-aos-delay="60"
+            >
                 <img src={contentTwo} alt="content pic" />
             </div>
-            <div className="wrapper-grid-item">
+            <div className="wrapper-grid-item" 
+                data-aos="slide-left" 
+                data-aos-delay="100"
+            >
                 <div className="features-grid-item-top">
                     <h3>FEATURES</h3>
                     <header className="second-headers">
