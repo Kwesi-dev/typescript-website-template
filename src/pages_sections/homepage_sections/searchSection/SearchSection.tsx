@@ -2,7 +2,7 @@ import React from 'react'
 import "./searchsection.scss"
 const SearchSection = () => {
   return (
-    <div className="search-section">
+    <section className="search-section">
         <div className="search-section-wrapper">
             <div className="left-design"></div>
             <div className="right-design"></div>
@@ -17,7 +17,7 @@ const SearchSection = () => {
             </div>
             <div className="bottom-design"></div>
         </div>
-    </div>
+    </section>
   )
 }
 
